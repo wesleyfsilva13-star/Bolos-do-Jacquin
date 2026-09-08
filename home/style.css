@@ -111,35 +111,109 @@
 
 .home_subtitulo {
     font-family: "Libre Caslon Text", serif;
-   /* background-color: darkgreen;*/
+    /* background-color: darkgreen;*/
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
     margin-top: 100px;
 }
 
 .home_subtitulo h2 {
     font-weight: 700;
     font-size: 64px;
-   background-image: linear-gradient(0deg, #ffffff, #e9e9e9);
-   background-clip: text;
-   -webkit-background-clip: text;
+    background-image: linear-gradient(0deg, #ffffff, #e9e9e9);
+    background-clip: text;
+    -webkit-background-clip: text;
 
-   color: transparent;
-   -webkit-text-fill-color: transparent;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
 }
 
 .home_subtitulo span {
     font-size: 32px;
     position: absolute;
     bottom: -10px;
+    margin-bottom: 10px;
 }
 
-.home_subtitulo hr{
+.home_subtitulo hr {
     max-width: 380px;
     width: 100%;
     background-color: #c5a028;
     margin-top: 5px;
     border: none;
     height: 2px;
+}
+
+.img_categoria1{
+    background-image: url(../IMG/pexels-jonathanborba-26774588\ 1.png);
+    width: 770px;
+    height: 640px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 50px 20px;
+}
+
+.container_categorias{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.container_categorias a{
+    color: #ffffff;
+    text-decoration: none;
+    justify-content: space-between;
+
+}
+
+.img_categoria1 span {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-weight: 500;
+}
+
+.img_categoria1 h3{
+    font-size: 32px;
+}
+
+.home_produtos h3{
+    font-family: "Libre Caslon Text", serif;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.img_categoria1 h3{
+    font-size: 32px;
+}
+
+.img_categoria2{
+    background-image: url(../IMG/Image\ \(1\).png);
+   width: 353px;
+   height: 284px;
+}
+
+.img_categoria3{
+    background-image:url(../IMG/Image\ \(2\).png); 
+    width: 25%;
+    max-width: 352px;
+    height: 284px;
+}
+
+.img_categoria2,
+.img_categoria3{
+     width: 352px;
+    max-width: 352px;
+    height: 284px;
+    display: flex;
+    align-items: flex-end;
+    padding: 20px 10px;
+    font-size: 24px;
+}
+
+.col_categorias{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
