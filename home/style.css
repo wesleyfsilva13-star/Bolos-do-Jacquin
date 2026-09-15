@@ -117,6 +117,7 @@
     align-items: center;
     position: relative;
     margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .home_subtitulo h2 {
@@ -144,9 +145,10 @@
     margin-top: 5px;
     border: none;
     height: 2px;
+    /* margin-bottom: 100px; */
 }
 
-.img_categoria1{
+.img_categoria1 {
     background-image: url(../IMG/pexels-jonathanborba-26774588\ 1.png);
     width: 770px;
     height: 640px;
@@ -156,13 +158,13 @@
     padding: 50px 20px;
 }
 
-.container_categorias{
+.container_categorias {
     display: flex;
     width: 100%;
     justify-content: space-between;
 }
 
-.container_categorias a{
+.container_categorias a {
     color: #ffffff;
     text-decoration: none;
     justify-content: space-between;
@@ -174,36 +176,36 @@
     font-weight: 500;
 }
 
-.img_categoria1 h3{
+.img_categoria1 h3 {
     font-size: 32px;
 }
 
-.home_produtos h3{
+.home_produtos h3 {
     font-family: "Libre Caslon Text", serif;
     font-size: 32px;
     font-weight: 400;
 }
 
-.img_categoria1 h3{
+.img_categoria1 h3 {
     font-size: 32px;
 }
 
-.img_categoria2{
+.img_categoria2 {
     background-image: url(../IMG/Image\ \(1\).png);
-   width: 353px;
-   height: 284px;
+    width: 353px;
+    height: 284px;
 }
 
-.img_categoria3{
-    background-image:url(../IMG/Image\ \(2\).png); 
+.img_categoria3 {
+    background-image: url(../IMG/Image\ \(2\).png);
     width: 25%;
     max-width: 352px;
     height: 284px;
 }
 
 .img_categoria2,
-.img_categoria3{
-     width: 352px;
+.img_categoria3 {
+    width: 352px;
     max-width: 352px;
     height: 284px;
     display: flex;
@@ -212,8 +214,39 @@
     font-size: 24px;
 }
 
-.col_categorias{
+.col_categorias {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+/*-----FOOTER-----*/
+
+footer{
+    background-color: #fff4f4;
+    height: 110px;
+    display: flex;
+}
+
+.footer_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_footer{
+    display: flex;
+    justify-content: space-between;
+    width: 160px;
+
+}
+
+.footer_container span,
+.nav_footer a {
+    font-family: "Hanken Grotesk", sans-serif;
+}
+
+.nav_footer a{
+    text-decoration: none;
+    color: #747878;
 }
