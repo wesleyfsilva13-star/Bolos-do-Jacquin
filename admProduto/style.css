@@ -97,7 +97,7 @@ h1 {
     overflow: hidden;
 }
 
-/* -------SECAO CADASTRO DE PROFUTOS------- */
+/* -------SECAO CADASTRO DE PROdUTOS------- */
 .cad_container {
     display: flex;
     flex-direction: column;
@@ -125,7 +125,7 @@ h1 {
     background-image: linear-gradient(0deg, #ffffff, #e9e9e9);
     background-clip: text;
     -webkit-background-clip: text;
-    
+
     color: transparent;
     -webkit-text-fill-color: transparent;
 }
@@ -144,36 +144,145 @@ h1 {
     margin-top: 5px;
     border: none;
     height: 2px;
+}
+
+/* --------FORMULARIO---------- */
+form {
+    background-color: aqua;
+    width: 100%;
+}
+
+.inputs_form {
+    display: flex;
+    justify-content: space-around  ;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.lf_coluna {
+    display: flex;
+    flex-direction: column;
+}
+
+.lf_linha {
+    display: flex;
+
+}
+
+.input_img svg {
+    width: 24px;
+}
+
+.form_coluna1,
+.form_coluna2 {
+    width: 414px;
+}
+
+.input_img span,
+form label {
+    font-family: var(--fontHanken);
+    text-transform: uppercase;
+    color: #444444;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.inputs_form input[type=text],
+.inputs_form textarea {
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 1px #444444;
+    resize: none;
+}
+
+.inputs_form input[type=text]:focus,
+.inputs_form textarea:focus {
+    outline: none;
+}
+
+.linha_form {
+    margin-bottom: 10px;
+}
+
+.inputs_form input[type=file] {
+    display: none;
+}
+
+.input_img label {
+    /* background-color: blueviolet; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    border: solid 1px #444444;
+}
+
+.input_img label:hover {
+    cursor: pointer;
+}
+
+form input[type=checkbox],
+form input[type=text] {
+    height: 25px;
+}
+
+.input_cat input {
+    width: 314px;
+    margin-right: 20px;
+}
+
+.input_valor input {
+    margin-right: 20px;
+    width: 360px;
+}
+
+form input[type=button] {
+    margin: 0 auto;
+    display: block;
+    background-color: #000;
+    color: #ffff;
+    font-family: var(--fontHanken);
+    border: none;
+    height: 50px;
+    width: 150px;
+    text-transform: uppercase;
+
+    font-size: 15px;
+    font-weight: 10px;
+    letter-spacing: 2px;
+}
+
+
+
+
+
+
+
+
+
+/* ----------MEDIAS--------- */
+@media screen and (max-width: 768px) {
+    .header_container button {
+        display: block;
     }
 
-
-
-
-
-
-    /* ----------MEDIAS--------- */
-    @media screen and (max-width: 768px) {
-        .header_container button {
-            display: block;
-        }
-    
-        .link_inicial,
-        .box_busca {
-            display: none;
-        }
-    
-        .box_h2 h2 {
-            font-size: 3px;
-        }
-    
-        .box_h2 span {
-            font-size: 24px;
-            bottom: -18px;
-            margin-bottom: 20px;
-        }
-    
-        .box_h2 hr {
-            margin-top: 10px;
-            width: 70%;
-        }
+    .link_inicial,
+    .box_busca {
+        display: none;
     }
+
+    .box_h2 h2 {
+        font-size: 3px;
+    }
+
+    .box_h2 span {
+        font-size: 24px;
+        bottom: -18px;
+        margin-bottom: 20px;
+    }
+
+    .box_h2 hr {
+        margin-top: 10px;
+        width: 70%;
+    }
+}
